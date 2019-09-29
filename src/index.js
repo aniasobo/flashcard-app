@@ -7,6 +7,7 @@ import rootReducer from './reducers'; // this is the stack from reducers/index.j
 import App from './components/App';
 import Stack from './components/Stack'; 
 import { setStack } from './actions';
+import './index.css';
 
 const store = createStore(rootReducer);
 store.subscribe(() => console.log('store', store.getState()));
