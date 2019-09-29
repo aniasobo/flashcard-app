@@ -30,3 +30,19 @@ body {
   text-align: right;
   width: 50%;
 }
+
+.text-hidden {
+  visibility: hidden;
+}
+
+.text-revealed {
+  visibility: visible;
+  animation-name: fade-in;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+} 
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 100 }
+}
