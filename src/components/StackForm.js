@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
 
 class StackForm extends Component {
   constructor() {
@@ -31,7 +31,7 @@ class StackForm extends Component {
         <br />
         <Form inline>
           <FormGroup>
-            <ControlLabel>Title:</ControlLabel>
+            <FormLabel>Title:</FormLabel>
             {' '}
             <FormControl />
           </FormGroup>
