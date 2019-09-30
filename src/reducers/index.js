@@ -19,4 +19,4 @@ function stacks(state = [], action) {
   }
 }
 
-export default combineReducers({ stack, stacks )};
+export default combineReducers({ stack, stacks });
