@@ -35,6 +35,24 @@ class StackForm extends Component {
             {' '}
             <FormControl />
           </FormGroup>
+          {
+            this.state.cards.map(card => {
+              return (
+                <div key={card.id}>
+                  <br />
+                  <FormGroup>
+                    <FormLabel>Prompt:</FormLabel>
+                    {' '}
+                    <FormControl />
+                    {' '}
+                    <FormLabel>Answer:</FormLabel>
+                    {' '}
+                    <FormControl />
+                  </FormGroup>
+                </div>
+              )
+            })
+          }
         </Form>
         <br />
         <Button onClick={() => this.addCard()}>Add Card</Button>
