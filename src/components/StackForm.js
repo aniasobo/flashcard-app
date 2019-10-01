@@ -20,6 +20,14 @@ class StackForm extends Component {
     this.setState({ cards });
   }
 
+  updateCardPart(event, index, part) {
+    const { cards } = this.state;
+
+    cards[index][part] = event.target.value;
+
+    this.setState({ cards });
+  }
+
 
   render() {
     return (
@@ -43,19 +51,11 @@ class StackForm extends Component {
                   <FormGroup>
                     <FormLabel>Prompt:</FormLabel>
                     {' '}
-                    <FormControl 
-                      onChange={event => {
-                        const { cards } = this.state;
-
-                        cards[index].prompt = event.target.value;
-
-                        this.setState({ cards });
-                      }}
-                    />
+                    <FormControl onChange={event => this.updateCardPart(event, index, 'prompt')}/>
                     {' '}
                     <FormLabel>Answer:</FormLabel>
                     {' '}
-                    <FormControl />
+                    <FormControl onChange={event => this.updateCardPart(event, index, 'answer')}/>                    
                   </FormGroup>
                 </div>
               )
