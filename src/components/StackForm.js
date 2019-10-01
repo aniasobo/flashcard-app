@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
+import { addStack } from '../actions';
 
 class StackForm extends Component {
   constructor() {
@@ -28,6 +30,9 @@ class StackForm extends Component {
     this.setState({ cards });
   }
 
+  addStack() {
+    this.props.addStack(this.state);
+  }
 
   render() {
     return (
@@ -64,9 +69,11 @@ class StackForm extends Component {
         </Form>
         <br />
         <Button onClick={() => this.addCard()}>Add Card</Button>
+        {' '}
+        <Button onClick={() => this.addStack()}>Save and Add Stack</Button>
       </div>
     )
   }
 }
 
-export default StackForm;
+export default connect(null, { addStack })(StackForm);
