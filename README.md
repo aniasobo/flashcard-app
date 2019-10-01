@@ -1,3 +1,13 @@
+# Flashcard web app
+
+**TODOs**
+
+- [ ] test coverage
+- [ ] add new stack success message
+- [ ] better user experience when adding cards
+- [ ] CSS improvements
+     
+---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
