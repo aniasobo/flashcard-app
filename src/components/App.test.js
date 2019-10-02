@@ -9,6 +9,10 @@ describe('App', () => {
   const app = shallow(<App />);
 
   it('renders the app title', () => {
-    expect(app.find('h2').text()).toEqual('Flashcard Pro')
+    expect(app.find('h2').text()).toEqual('Flashcard Pro');
+  });
+
+  it('renders a link to create new stack', () => {
+    expect(app.find('Link h4').text()).toEqual('Create a new Stack');
   });
 });
