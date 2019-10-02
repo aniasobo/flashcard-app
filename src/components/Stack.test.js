@@ -2,17 +2,10 @@ import React from 'react';
 import { configure, shallow, mount, render } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Stack } from './Stack';
+import { stackData } from '../data/fixtures';
 
 configure({ adapter: new Adapter() });
-
-const props = {
-  stack: {
-    id: 0, 
-    title: 'test title',
-    cards: [{ id: 0, prompt: 'test prompt', answer: 'test answer'},
-            { id: 1, prompt: 'another test', answer: 'another test answer'}]
-  }
-};
+const props = { ...stackData };
 
 describe('Stack', () => {
   const stack = shallow(<Stack {...props} />);
