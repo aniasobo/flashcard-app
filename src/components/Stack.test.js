@@ -19,4 +19,8 @@ describe('Stack', () => {
   it('renders the title', () => {
     expect(stack.find('h3').text()).toEqual(props.stack.title);
   });
+
+  it('renders Home link', () => {
+    expect(stack.find('Link h4').text()).toEqual('Home');
+  });
 });
