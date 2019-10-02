@@ -11,6 +11,7 @@
 - [ ] Add delete stack feature
 - [ ] Add edit card feature
 - [ ] Add edit stack feature
+- [ ] refactor test configuration into a separate file
      
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
