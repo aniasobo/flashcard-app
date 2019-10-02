@@ -6,6 +6,11 @@
 - [ ] add new stack success message
 - [ ] better user experience when adding cards
 - [ ] CSS improvements
+- [ ] Use localstorage with the sfcookies npm package in order to save user-submitted stacks and reload them on revisits to the application
+- [ ] Add delete card feature
+- [ ] Add delete stack feature
+- [ ] Add edit card feature
+- [ ] Add edit stack feature
      
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
