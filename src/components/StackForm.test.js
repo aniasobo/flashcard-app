@@ -16,4 +16,16 @@ describe('StackForm', () => {
     expect(stackForm.find('h4').at(0).text()).toEqual('Home');
   });
 
+  it('renders a form component', () => {
+    expect(stackForm.find('Form').exists()).toBe(true);
+  });
+
+  it('renders an add new card button', () => {
+    expect(stackForm.find('Button').at(0).props().children).toEqual('Add Card');
+  });
+
+  it('renders the submit form button', () => {
+    expect(stackForm.find('Button').at(1).props().children).toEqual('Save and Add Stack');
+  });
+  
 });
