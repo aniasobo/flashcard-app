@@ -11,4 +11,9 @@ describe('StackForm', () => {
   it('renders title', () => {
     expect(stackForm.find('h4').at(1).text()).toEqual('Create a new Stack');
   });
+
+  it('renders home link', () => {
+    expect(stackForm.find('h4').at(0).text()).toEqual('Home');
+  });
+
 });
