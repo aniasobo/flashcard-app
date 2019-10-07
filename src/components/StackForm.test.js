@@ -28,4 +28,15 @@ describe('StackForm', () => {
     expect(stackForm.find('Button').at(1).props().children).toEqual('Save and Add Stack');
   });
   
+  describe('and updating the title', () => {
+    beforeEach(() => {
+      stackForm.find('FormControl').simulate('change', { target: { value: 'change title' }});
+    });
+
+    it('updates the title in state', () => {
+      expect(stackForm.state().title).toEqual('change title');
+    });
+  });
+
+  describe()
 });
