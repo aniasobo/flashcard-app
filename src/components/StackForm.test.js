@@ -38,5 +38,13 @@ describe('StackForm', () => {
     });
   });
 
-  describe()
+  describe('when adding a new card', () => {
+    beforeEach(() => {
+      stackForm.find('Button').at(0).simulate('click');
+    });
+
+    it('adds a new card to the state', () => {
+      expect(stackForm.state().cards.length).toEqual(1);
+    });
+  });
 });
