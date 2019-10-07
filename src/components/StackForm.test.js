@@ -69,5 +69,15 @@ describe('StackForm', () => {
       });
     });
 
+    describe('and updating the card answer', () => {
+      beforeEach(() => {
+        stackForm.find('FormControl').at(2).simulate('change', { target: { value: 'change answer' }});
+      });
+
+      it('updates the answer in the state', () => {
+        expect(stackForm.state().cards[0].answer).toEqual('change answer');
+      });
+    });
+
   });
 });
