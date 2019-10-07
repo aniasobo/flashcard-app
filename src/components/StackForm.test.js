@@ -49,6 +49,11 @@ describe('StackForm', () => {
 
     it('renders the prompt section', () => {
       expect(stackForm.find('FormLabel').at(1).props().children).toEqual('Prompt:');
-    })
+    });
+
+    it('renders the answer section', () => {
+      expect(stackForm.find('FormLabel').at(2).props().children).toEqual('Answer:');
+    });
+
   });
 });
