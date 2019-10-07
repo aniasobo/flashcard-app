@@ -46,5 +46,9 @@ describe('StackForm', () => {
     it('adds a new card to the state', () => {
       expect(stackForm.state().cards.length).toEqual(1);
     });
+
+    it('renders the prompt section', () => {
+      expect(stackForm.find('FormLabel').at(1).props().children).toEqual('Prompt:');
+    })
   });
 });
