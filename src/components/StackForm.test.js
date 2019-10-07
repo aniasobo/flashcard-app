@@ -43,6 +43,10 @@ describe('StackForm', () => {
       stackForm.find('Button').at(0).simulate('click');
     });
 
+    afterEach(() => {
+      stackForm.setState({ cards: [] });
+    });
+
     it('adds a new card to the state', () => {
       expect(stackForm.state().cards.length).toEqual(1);
     });
@@ -53,6 +57,16 @@ describe('StackForm', () => {
 
     it('renders the answer section', () => {
       expect(stackForm.find('FormLabel').at(2).props().children).toEqual('Answer:');
+    });
+
+    describe('and updating the card prompt', () => {
+      beforeEach(() => {
+        stackForm.find('FormControl').at(1).simulate('change', { target: { value: 'change prompt' }});
+      });
+
+      it('updates the prompt in the state', () => {
+        expect(stackForm.state().cards[0].prompt).toEqual('change prompt');
+      });
     });
 
   });
