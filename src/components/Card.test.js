@@ -26,4 +26,16 @@ describe('Card', () => {
   it('renders default class `text-hidden`', () => {
     expect(card.find('.card-answer h4').hasClass('text-hidden')).toBe(true);
   });
+
+  describe('and clicking on the card', () => {
+    beforeEach(() => {card.simulate('click')});
+
+    it('sets `reveal` to be `true`', () => {
+      expect(card.state().reveal).toBe(true);
+    });
+  
+    it('changes class to `text-revealed`', () => {
+      expect(card.find('.card-answer h4').hasClass('text-revealed')).toBe(true);
+    });
+  });
 });
