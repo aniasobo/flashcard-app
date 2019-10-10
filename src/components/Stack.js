@@ -3,10 +3,8 @@ import { connect } from 'react-redux';
 import {Link} from 'react-router-dom'; 
 import Card from './Card';
 
-export class Stack extends Component {
-  render() {
-    const { title, cards } = this.props.stack;
-
+//export class Stack extends Component {
+  export const Stack = ({stack: {title, cards}}) => {
     return (
       <div>
         <Link className='homelink' to='/'><h4>Home</h4> </Link>
@@ -21,7 +19,6 @@ export class Stack extends Component {
         }
       </div>
     )
-  }
 }
 
 function mapStateToProps(state) {

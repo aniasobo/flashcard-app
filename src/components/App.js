@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import StackList from './Stacklist';
 
-//class App extends Component {
   const App = () => {
     return (
       <div>
