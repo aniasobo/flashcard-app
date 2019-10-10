@@ -5,6 +5,10 @@ import { StackForm } from './StackForm';
 
 configure({ adapter: new Adapter() });
 
+const testTitle = 'change title';
+const testPrompt = 'change prompt';
+const testAnswer = 'change answer';
+
 describe('StackForm', () => {
   const stackForm = shallow(<StackForm />);
 
@@ -30,11 +34,11 @@ describe('StackForm', () => {
   
   describe('and updating the title', () => {
     beforeEach(() => {
-      stackForm.find('FormControl').simulate('change', { target: { value: 'change title' }});
+      stackForm.find('FormControl').simulate('change', { target: { value: testTitle }});
     });
 
     it('updates the title in state', () => {
-      expect(stackForm.state().title).toEqual('change title');
+      expect(stackForm.state().title).toEqual(testTitle);
     });
   });
 
@@ -61,21 +65,21 @@ describe('StackForm', () => {
 
     describe('and updating the card prompt', () => {
       beforeEach(() => {
-        stackForm.find('FormControl').at(1).simulate('change', { target: { value: 'change prompt' }});
+        stackForm.find('FormControl').at(1).simulate('change', { target: { value: testPrompt }});
       });
 
       it('updates the prompt in the state', () => {
-        expect(stackForm.state().cards[0].prompt).toEqual('change prompt');
+        expect(stackForm.state().cards[0].prompt).toEqual(testPrompt);
       });
     });
 
     describe('and updating the card answer', () => {
       beforeEach(() => {
-        stackForm.find('FormControl').at(2).simulate('change', { target: { value: 'change answer' }});
+        stackForm.find('FormControl').at(2).simulate('change', { target: { value: testAnswer }});
       });
 
       it('updates the answer in the state', () => {
-        expect(stackForm.state().cards[0].answer).toEqual('change answer');
+        expect(stackForm.state().cards[0].answer).toEqual(testAnswer);
       });
     });
 
