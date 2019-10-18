@@ -2,6 +2,37 @@ body {
   padding: 5%;
   text-align: center;
   font-family: 'avenir';
+  font-size: 100%;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: #FFDFDF;
+  background-color: #00449E;
+  left: 0;
+  top: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+h4 {
+  color: #FFDFDF;
+}
+
+h4:active, h4:hover, h4:focus, h4:link, h4:visited {
+  transition:color .15s ease-in;
+}
+
+h4:focus, h4:hover {
+  transition:opacity .15s ease-in; 
+  opacity:.5;
+}
+
+h4:active {
+  opacity:.8;
+  transition:opacity .15s ease-out;
 }
 
 .homelink {
