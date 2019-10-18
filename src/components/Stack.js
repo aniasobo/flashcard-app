@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom'; 
 import Card from './Card';
 
-//export class Stack extends Component {
-  export const Stack = ({stack: {title, cards}}) => {
+export const Stack = ({stack: {title, cards}}) => {
     return (
       <div>
         <Link className='homelink' to='/'><h4>Home</h4> </Link>

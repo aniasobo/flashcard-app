@@ -10,6 +10,7 @@ body {
   background-color: #00449E;
   left: 0;
   top: 0;
+  text-decoration: none;
 }
 
 h2 {
@@ -19,21 +20,23 @@ h2 {
 
 h4 {
   color: #FFDFDF;
-}
+} 
 
 h4:active, h4:hover, h4:focus, h4:link, h4:visited {
-  transition:color .15s ease-in;
+   transition:color .15s ease-in; 
+  text-decoration: none;
 }
 
-h4:focus, h4:hover {
-  transition:opacity .15s ease-in; 
-  opacity:.5;
+ h4:focus, h4:hover {
+   transition:opacity .15s ease-in; 
+  opacity:.5; 
 }
 
-h4:active {
+
+ h4:active {
   opacity:.8;
   transition:opacity .15s ease-out;
-}
+} 
 
 .homelink {
   position: absolute;

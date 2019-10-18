@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import StackList from './Stacklist';
 
@@ -9,7 +9,7 @@ import StackList from './Stacklist';
         <hr/>
         <StackList />
         <hr />
-        <Link to='stack_form'><h4>Create a new Stack</h4></Link>
+        <Link to='stack_form'><h4 class="f6 link dim br2 ba ph3 pv2 mb2 dib washed-red">Create a new Stack</h4></Link>
       </div>
     )};
 

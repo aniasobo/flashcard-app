@@ -20,7 +20,7 @@ export class StackList extends Component {
                 key={stack.id} 
                 onClick={() => {this.props.setStack(stack)}}
               >
-                <h4>{stack.title}</h4>
+                <h4 class="f4 fw6 db washed-red link dim">{stack.title}</h4>
               </Link>
             )
           })
