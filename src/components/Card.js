@@ -12,10 +12,10 @@ class Card extends Component {
     return (
       <div className='card' onClick={() => this.setState({ reveal: true })}>
         <div className='card-prompt'>
-          <h4>{prompt}</h4>
+          <p class="f4 lh-copy measure">{prompt}</p>
         </div>
         <div className='card-answer'>
-          <h4 className={this.state.reveal ? 'text-revealed' : 'text-hidden'}>{answer}</h4>
+          <p className={this.state.reveal ? 'text-revealed' : 'text-hidden'}>{answer}</p>
         </div>
       </div>
     )

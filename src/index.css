@@ -7,7 +7,7 @@ body {
   height: 100%;
   width: 100%;
   color: #FFDFDF;
-  background-color: #00449E;
+  background-color: #137752;
   left: 0;
   top: 0;
   text-decoration: none;
@@ -105,6 +105,9 @@ a, a:active, a:hover, a:focus, a:link, a:visited {
   animation-name: fade-in;
   -moz-animation-duration: 1s;
   animation-duration: 1s;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 30em;
 } 
 
 @keyframes fade-in {
