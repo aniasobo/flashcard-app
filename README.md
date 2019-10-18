@@ -6,8 +6,7 @@ Built with React and Redux, [Tachyons](http://tachyons.io/) CSS, tested with Jes
 
 **Preview:**
 
-
-
+![home page](flashhome.png) ![stack](stack.png) ![form](form.png)
      
 ---
 
@@ -22,7 +21,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ### `npm test` to run tests
-   
+
+## Known problems
+
+- [ ] make it so return == submit
+- [ ] saving stack should redirect back to Home
+     
 **TODOs**
 
 - [x] full test coverage

@@ -40,7 +40,7 @@ export class StackForm extends Component {
         <Link to='/'className='homelink'>
           <h4 class="f6 link dim br2 ba ph3 pv2 mb2 dib washed-red">Home</h4>
         </Link>
-        <h2>Create a new Stack</h2>
+        <h3>Create a new Stack</h3>
         <br />
         <Form inline>
           <FormGroup>
@@ -68,9 +68,9 @@ export class StackForm extends Component {
           }
         </Form>
         <br />
-        <Link className='f6 link dim br2 ba ph3 pv2 mb2 dib washed-red' onClick={() => this.addCard()}>Add Card</Link>
+        <Link className='f6 link dim br2 ba ph3 pv2 mb2 dib washed-red' onClick={() => this.addCard()}>Add another card</Link>
         {' '}
-        <Link className='f6 link dim br2 ba ph3 pv2 mb2 dib washed-red' onClick={() => this.addStack()}>Save and Add Stack</Link>
+        <Link className='f6 link dim br2 ba ph3 pv2 mb2 dib washed-red' onClick={() => this.addStack()}>Save this stack</Link>
       </div>
     )
   }
