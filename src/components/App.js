@@ -4,7 +4,7 @@ import StackList from './Stacklist';
 
   const App = () => {
     return (
-      <div>
+      <div class="inner">
         <h2>Flashcard Pro</h2>
         <hr/>
         <StackList />

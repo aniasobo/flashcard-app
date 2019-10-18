@@ -13,6 +13,19 @@ body {
   text-decoration: none;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  flex-grow: 1;
+}
+
 h2 {
   font-weight: 700;
   font-size: 3.5rem;
@@ -23,12 +36,11 @@ h4 {
 } 
 
 h4:active, h4:hover, h4:focus, h4:link, h4:visited {
-   transition:color .15s ease-in; 
-  text-decoration: none;
+  transition:color .15s ease-in; 
 }
 
  h4:focus, h4:hover {
-   transition:opacity .15s ease-in; 
+  transition:opacity .15s ease-in; 
   opacity:.5; 
 }
 
@@ -37,6 +49,10 @@ h4:active, h4:hover, h4:focus, h4:link, h4:visited {
   opacity:.8;
   transition:opacity .15s ease-out;
 } 
+
+a, a:active, a:hover, a:focus, a:link, a:visited {
+  text-decoration: none;
+}
 
 .homelink {
   position: absolute;
@@ -51,6 +67,9 @@ h4:active, h4:hover, h4:focus, h4:link, h4:visited {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  width: auto;
+  min-width: 500px;
+  max-width: 900px;
 }
 
 .card-prompt {

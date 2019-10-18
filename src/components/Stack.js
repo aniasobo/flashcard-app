@@ -5,8 +5,8 @@ import Card from './Card';
 
 export const Stack = ({stack: {title, cards}}) => {
     return (
-      <div>
-        <Link className='homelink' to='/'><h4>Home</h4> </Link>
+      <div class="inner">
+        <Link className='homelink' to='/'><h4 class="f6 link dim br2 ba ph3 pv2 mb2 dib washed-red">Home</h4> </Link>
         <h3>{title}</h3>
         <br />
         {
