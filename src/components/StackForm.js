@@ -36,15 +36,15 @@ export class StackForm extends Component {
 
   render() {
     return (
-      <div>
+      <div class='inner'>
         <Link to='/'className='homelink'>
-          <h4>Home</h4>
+          <h4 class="f6 link dim br2 ba ph3 pv2 mb2 dib washed-red">Home</h4>
         </Link>
-        <h4>Create a new Stack</h4>
+        <h2>Create a new Stack</h2>
         <br />
         <Form inline>
           <FormGroup>
-            <FormLabel>Title:</FormLabel>
+            <FormLabel className='f6 b db mb2'>Name your card stack:</FormLabel>
             {' '}
             <FormControl onChange={event => this.setState({ title: event.target.value })} />
           </FormGroup>
@@ -68,9 +68,9 @@ export class StackForm extends Component {
           }
         </Form>
         <br />
-        <Button onClick={() => this.addCard()}>Add Card</Button>
+        <Link className='f6 link dim br2 ba ph3 pv2 mb2 dib washed-red' onClick={() => this.addCard()}>Add Card</Link>
         {' '}
-        <Button onClick={() => this.addStack()}>Save and Add Stack</Button>
+        <Link className='f6 link dim br2 ba ph3 pv2 mb2 dib washed-red' onClick={() => this.addStack()}>Save and Add Stack</Link>
       </div>
     )
   }
